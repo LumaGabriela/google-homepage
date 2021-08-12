@@ -57,7 +57,11 @@ body{
     flex-direction:column;
     justify-content: center;
     align-items:center;
+    color:#3c4043;
 
+}
+.main-img{
+    padding:15px 0;
 }
 .search-bar {
     max-width: 650px;
@@ -67,4 +71,54 @@ body{
     flex-direction:row;
     height:50px;
     border-radius:50px;
+    align-items:center;
+    justify-content: space-between;
+    margin:10px 0;
+    padding: 0 5px;
+}
+.search-bar i {
+    font-size:1.1rem;
+    justify-content: center;
+    padding:4px 9px;
+}
+.search-bar .fa-microphone{
+    color: ;
+}
+.search-bar .fa-keyboard{
+    color:#3c4043;
+}
+.search-bar .fa-search{
+    color:#9aa0a6;
+}
+.search{
+    width:79%;
+    height:100%;
+    border:none;
+}
+.search:focus{
+    outline: none;
+}
+.buttons{
+    display:flex;
+    flex-direction:row;
+    padding:10px;
+}
+.buttons input{
+    font-size:.9rem;
+    height:40px;
+    width:150px;
+    border:none;
+    margin:0 8px;
+    cursor: pointer;
+    border-radius:5px;
+    background:#fafafa;
+    color:#666;
+}
+.buttons input:hover{
+    border:1px solid #ddd;
+    box-shadow: 1px 1px  #ddd;
+}
+/* Footer */
+.footer {
+    
 }
