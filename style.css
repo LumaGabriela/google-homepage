@@ -33,7 +33,7 @@ body{
     margin:0 0 0 auto;
 }
 .menu li{
-    display: inline-block;
+    display: flex;
     margin:5px;
     padding:5px;
 }
@@ -43,13 +43,25 @@ body{
 }
 .profile-img{
     border-radius:50%;
-    height:37px;
-    width:37px;
+    height:34px;
+    width:34px;
+    padding:4px;
+    cursor:pointer;
+    
+}
+.profile-img:hover{
+    background:#d1d1d1;
+    
 }
 .menu i{
     font-size:1.6rem;
     color:#5f6368;
-    padding:0 8px;
+    padding: 6px 8px;
+    cursor:pointer;
+    border-radius:50%;
+}
+.menu i:hover{
+    background:#bec4ca80;
 }
 /* Main area */
 .main{
@@ -77,6 +89,9 @@ body{
     justify-content: space-between;
     margin:10px 0;
     padding: 0 5px;
+}
+.search-bar:hover{
+    box-shadow:1px 1px 2px #bfc5ca;
 }
 .search-bar i {
     font-size:1.1rem;
@@ -166,7 +181,6 @@ footer a {
     color:#6d6d6d;
 }
 footer a:hover{
-    
     text-decoration:underline #6d6d6d;
 }
 @media screen and (max-width:542px){
@@ -175,5 +189,21 @@ footer a:hover{
     }
     .footer-links li{
         padding:16px 30px;
+    }
+}
+@media screen and (min-width:874px){
+    footer{
+        height:100px;
+    }
+    footer p{
+        height:50px;
+    }
+    .footer-links li{
+        padding:15px 20px;
+    }
+    footer div {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
     }
 }
